@@ -20,8 +20,13 @@ def count_each_letters(text):
     
     return letters
 
+# return the second value of the list to sort it
+def sortOff(list):
+    return list[1]
+
+
 def sort_dict_by_value(dic):
-    return dict(sorted(dic.items()))
+    return dict(sorted(dic.items(), key=sortOff, reverse=True))
 
 # print on console the report on the count of caracter
 def print_report(text):
