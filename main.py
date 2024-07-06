@@ -20,17 +20,20 @@ def count_each_letters(text):
     
     return letters
 
+def sort_dict_by_value(dic):
+    return dict(sorted(dic.items()))
+
 # print on console the report on the count of caracter
 def print_report(text):
-    chars = count_each_letters(text)
-    chars = dict(sorted(chars.items()))
+    chars_count = count_each_letters(text)
+    chars_count = sort_dict_by_value(chars_count)
 
     print("--- Begin report of books/frankenstein.txt ---")
 
     print(f"{count_words(text)} words found in the document\n")
 
-    for letter in chars:
-        print(f"The {letter} characters was found {chars[letter]} times")
+    for letter in chars_count:
+        print(f"The {letter} characters was found {chars_count[letter]} times")
     
     print("--- End Report ---")
 
