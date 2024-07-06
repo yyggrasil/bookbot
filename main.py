@@ -2,8 +2,7 @@ def main():
 
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
-    words_count = count_words(text)
-    print(count_each_letters(text))
+    print_report(text)
     
 
 # return a dictionary of the count of all caracters in the text
@@ -22,8 +21,18 @@ def count_each_letters(text):
     return letters
 
 # print on console the report on the count of caracter
-def print_report(chars):
-    pass
+def print_report(text):
+    chars = count_each_letters(text)
+    chars = dict(sorted(chars.items()))
+
+    print("--- Begin report of books/frankenstein.txt ---")
+
+    print(f"{count_words(text)} words found in the document\n")
+
+    for letter in chars:
+        print(f"The {letter} characters was found {chars[letter]} times")
+    
+    print("--- End Report ---")
 
 # return an int of total words
 def count_words(text):
