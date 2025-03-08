@@ -10,7 +10,7 @@ have python3 installed (just that, its not much complicated)
 
 ### running
 
-open the folder and in the python code implement the path to the book file in the line 3 and it should look line something like this
+open the folder and in the python code implement the path to the book file in the line 3 and it should look something like this
 
 ```python3
     book_path = "books/frankenstein.txt"
