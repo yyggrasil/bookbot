@@ -16,7 +16,7 @@ open the folder and in the python code implement the path to the book file in th
     book_path = "books/frankenstein.txt"
 ```
 
-remeber the tab, or it won't work
+remember the tab, or it won't work
 
 
 #### Linux
